@@ -4,7 +4,7 @@ Mata Kuliah
 Repo ini adalah file file yang berisi pembelajaran tentang Desain Web selama di semester 3 ini.  
   
 Preview dari [`tugas-mandiri-01`](index.html) adalah  
-![preview tugas-mandiri-01](img/preview-index.png)  
+![preview tugas-mandiri-01](img/tugasMandiri-01.png)  
 
 Preview dari [`index2.html`](index2.html) adalah  
 ![preview index2.html](img/preview-index2.png)  
