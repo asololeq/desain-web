@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+#biodata-container {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #05157a;
+    width: 500px;
+    margin: 50px auto;
+}
+
+.judul-biodata {
+    color: #05157a;
+    text-align: center;
+}
+
+.motto {
+    font-style: italic;
+    color: #555;
+}
+
+.konten-biodata p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#biodata-container:hover {
+    box-shadow: 5px 5px 15px #05157a;
+}
+
+.label{
+    margin-right: 5px;
+    display: inline-block;
+    width: 80px;
+}

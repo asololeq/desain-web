@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* Kustomisasi tema warna brand dan font sesuai modul */
+  --color-brand: #6d28d9;
+  --font-display: "Poppins", sans-serif;
+}
+
+/* Menggunakan @apply untuk komponen tombol yang sering diulang */
+.btn-primary {
+  @apply bg-brand text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-800 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95;
+}
+
+.btn-secondary {
+  @apply border-2 border-brand text-brand px-6 py-3 rounded-lg font-bold hover:bg-brand hover:text-white transition-all duration-300;
+}

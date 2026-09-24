@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    padding: 30px 20px;
+}
+
+@keyframes fadeInDown {
+    from { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.judul-halaman {
+    text-align: center;
+    color: #334155;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.team-card {
+    width: 100%; 
+    max-width: 320px; 
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.team-card img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.team-card h3 {
+    margin: 0 0 5px 0;
+    color: #1e293b;
+    font-size: 18px;
+}
+
+.team-card p {
+    margin: 0;
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    background-color: #f0f9ff; 
+}
+
+.team-card:hover img {
+    transform: scale(1.1);
+    border-color: #3b82f6;
+}
+
+@media (min-width: 768px) {
+    .team-container {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-card {
+        width: calc(50% - 20px); 
+        max-width: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .team-card {
+        width: calc(25% - 20px); 
+    }
+}
+
+.foto-profil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}

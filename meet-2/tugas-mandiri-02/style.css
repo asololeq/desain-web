@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    /* vh (viewport height) digunakan agar body mengambil setidaknya 100% tinggi layar browser sehingga konten bisa diletakkan di tengah dengan rapi */
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e8f0;
+}
+
+.card-profil {
+    /* % (persentase) digunakan agar lebar kartu responsif mengikuti 80% dari parent-nya di layar kecil, tapi dibatasi max-width */
+    width: 80%;
+    /* px (pixel) digunakan untuk batasan pasti yang tidak akan berubah meski ukuran layar mengecil */
+    max-width: 350px;
+    /* rem digunakan untuk padding agar ukurannya konsisten dan berdasar pada ukuran font root (biasanya 16px) */
+    padding: 2rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+}
+
+.desk {
+    margin-top: 1rem;
+}
+
+.foto-profil {
+    width: 150px;
+    border-radius: 50%;
+    /* em digunakan pada margin bawah agar jarak antara gambar dan teks berdasar pada ukuran font elemen parent/saat ini */
+    margin-bottom: 1em; 
+}
